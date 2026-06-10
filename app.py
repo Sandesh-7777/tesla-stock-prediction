@@ -6,6 +6,11 @@ import matplotlib.pyplot as plt
 import joblib
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
+import tensorflow as tf
+
+model_1d = tf.keras.models.load_model("tesla_best_model_1d.keras")
+model_5d = tf.keras.models.load_model("tesla_best_model_5d.keras")
+model_10d = tf.keras.models.load_model("tesla_best_model_10d.keras")
 
 # -------------------------------------------------------
 # Page Configuration
