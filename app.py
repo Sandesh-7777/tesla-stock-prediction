@@ -90,14 +90,16 @@ start_date = st.sidebar.date_input(
     "Start Date",
     value=pd.to_datetime("2018-01-01").date(),
     min_value=min_date,
-    max_value=max_date
+    max_value=max_date,
+    key="start_date_input"
 )
 
 end_date = st.sidebar.date_input(
     "End Date",
     value=max_date,
     min_value=min_date,
-    max_value=max_date
+    max_value=max_date,
+    key="end_date_input"
 )
 
 st.sidebar.markdown("---")
