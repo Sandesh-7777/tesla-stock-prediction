@@ -76,6 +76,7 @@ st.sidebar.markdown("---")
 horizon = st.sidebar.selectbox(
     "Prediction Horizon",
     ["1 Day Ahead", "5 Days Ahead", "10 Days Ahead"]
+    key="horizon_select"
 )
 
 # Date range for chart
